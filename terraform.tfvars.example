@@ -1,0 +1,47 @@
+# the Rancher2 API url for the Rancher instance you want to create the cluster resource in
+rancher2_api_url = "https://rancher.domain.tld/v3"
+
+# the Rancher API access key for the API url below
+rancher2_access_key = "token-xxxxx"
+
+# the Rancher API secret key for the API url below
+rancher2_secret_key = "a...z"
+
+# google credential file for system account
+credential_file = "credential.json"
+
+# the Rancher2 API url for the Rancher instance you want to create the cluster resource in
+cluster_name = "demo"
+
+# the description of the cluster
+cluster_description = "cluster for demo use-case"
+
+# the Google Cloud region to deploy resources in
+gke_region = "us-west2"
+
+# the project ID to deploy resources in
+gke_project_id = "gke-project-0000"
+
+# image type for OS UBUNTU, COS (Container-Optimized OS)
+image_type = "COS"
+
+# kubernetes version in gke, e.g. 1.17.13-gke.600 or 1.17.13-gke.1400
+gke_kubernetes_version = "1.17.13-gke.1400"
+
+# instance sizing for nodes in pool, e.g. n1-standard-2: 2C-8GB
+gke_machine_type = "n1-standard-2"
+
+# disk size in GB for nodes
+gke_disk_size = "50"
+
+# persitent disk, pd-standart or pde-ssd
+gke_disk_type = "pd-standard"
+
+# the desired number of nodes for the node pool created
+desired_node_count = "2"
+
+# the minimum amount of nodes acceptable in the autoscaling group
+min_node_count = "2"
+
+# the maximum amount of nodes acceptable in the autoscaling group
+max_node_count = "10"
